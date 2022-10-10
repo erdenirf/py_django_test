@@ -20,16 +20,17 @@ cd py_django_test
 sudo docker-compose up -d
 ```
 
-также сервер нужно добавить в /mysite/settings.py
-```
-ALLOWED_HOSTS = ['51.250.5.32']
-```
 
 ### Открываем порты в Ubuntu 20.04
 
 ```
 sudo iptables -I INPUT -p tcp -m tcp --dport 8000 -j ACCEPT
 sudo service netfilter-persistent save
+```
+
+также сервер нужно добавить в /mysite/settings.py
+```
+ALLOWED_HOSTS = ['51.250.5.32']
 ```
 
 ### Результат
