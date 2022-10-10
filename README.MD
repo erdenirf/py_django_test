@@ -34,4 +34,6 @@ sudo service netfilter-persistent save
 
 ### Результат
 
-http://51.250.5.32:8000/
+на моем тестовом сервере http://51.250.5.32:8000/
+
+у себя на компьютере http://localhost:8000/
